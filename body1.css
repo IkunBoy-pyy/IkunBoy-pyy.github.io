@@ -1,0 +1,714 @@
+/* 把所有标签的内外边距清零 */
+* {
+	margin: 0;
+	padding: 0;
+	/* CSS3里的盒子模型 */
+}
+
+a {
+	color: #666;
+	text-decoration: none
+}
+
+/* 清除浮动 */
+.clearfix:after {
+	visibility: hidden;
+	clear: both;
+	display: block;
+	content: ".";
+	height: 0
+}
+
+.clearfix {
+	*zoom: 1
+}
+
+.body1 .body2 {
+	width: 1280px;
+	height: 1782px;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.body1 {
+	background: #f0f0f0;
+	/* 总背景图 */
+	background: url(../img/download0.jpg) no-repeat center;
+	background-size: cover;
+	padding-bottom: 208px;
+}
+
+ul {
+	list-style: none;
+}
+
+.body1 .body2 .body2_img ul {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 560px;
+	padding: 138px 0 0 0;
+	margin: 0;
+}
+
+ul li a {
+	text-decoration: none;
+}
+
+
+/* 导航栏 */
+.navigation_bar {
+	width: 100%;
+	height: 66px;
+	background-color: rgba(36, 36, 36, 0.8);
+	box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 35%);
+	position: fixed;
+	z-index: 999;
+}
+
+.navigation_left {
+	position: relative;
+	width: 900px;
+	height: 66px;
+	float: left;
+}
+
+.navigation_left img {
+	width: 121px;
+	height: 75px;
+	padding-left: 100px;
+	position: relative;
+	top: -10px;
+}
+
+.navigation_left img:hover {
+	cursor: pointer;
+}
+
+.navigation_left .menu {
+	width: 536px;
+	height: 66px;
+	position: relative;
+	left: -100px;
+	float: right;
+}
+
+.navigation_left .menu a {
+	float: left;
+	text-align: center;
+	font-size: 17px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	line-height: 60px;
+	color: #ccc;
+	width: 45px;
+	height: 66px;
+	margin: 0 30px;
+	border-top: 4px solid rgba(36, 36, 36, 0.1);
+	transition: 0.5s;
+}
+
+.navigation_left .menu .active {
+	color: #ffffff;
+	text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+	border-top: 4px solid #69e0ff;
+}
+
+.navigation_left .menu a:hover {
+	text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+	color: #ffffff;
+	border-top: 4px solid #69e0ff;
+}
+
+.navigation_right {
+	/* background-color: #69e0ff; */
+	position: absolute;
+	width: 270px;
+	right: 0;
+	white-space: nowrap;
+	height: 100%;
+	top: 0;
+	align-items: center;
+}
+
+.navigation_right span {
+	text-align: center;
+	position: relative;
+	top: 3px;
+
+}
+
+.navigation_right img {
+	vertical-align: middle;
+	margin-left: 18px;
+	opacity: 0.6;
+}
+
+.navigation_right a {
+	width: 147px;
+	height: 27px;
+	float: left;
+	position: absolute;
+	top: 20px;
+	text-align: center;
+	color: #cccccc;
+	display: block;
+}
+
+.navigation_right a:hover img {
+	opacity: 1;
+}
+
+.navigation_right a:hover {
+	color: #ffffff;
+}
+
+.header__login .login__btn {
+	line-height: 3.6;
+	align-items: center;
+	float: right;
+	padding: 0 10px;
+	border: 0;
+	outline: none;
+	background: none;
+	font-size: 17px;
+	color: #ccc;
+	cursor: pointer;
+}
+
+.header__login .login__btn:hover {
+	color: #ffffff;
+}
+
+.header__login .login__btn:hover img {
+	opacity: 1;
+}
+
+.body1 .body1_1 .body_img {
+	background: url(../img/download.jpg) center no-repeat;
+	width: 100%;
+	height: 700px;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* 图片介绍*/
+.body1 .body2 .body2_img ul li img {
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+}
+
+.body1 .body2 .body2_img ul li {
+	position: relative;
+	width: 420px;
+	height: 450px;
+	background-color: rgba(18, 18, 18, 0.8);
+	opacity: 0.9;
+	float: left;
+	border-radius: 4px;
+	box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 35%)
+}
+
+/* 图片逆出隐藏 */
+.body1 .body2 .body2_img .body2_he {
+	width: 380px;
+	height: 190px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+/* 鼠标悬浮图片放大 */
+.body1 .body2 .body2_img ul li:hover img {
+	transform: scale(1.2);
+
+}
+
+.body1 .body2 .body2_img ul li .body2_zi {
+	color: #fefefe;
+	font-size: 24px;
+	line-height: 34px;
+	padding: 0 17px;
+	margin: 10px 0;
+}
+
+/* 2022     新闻 */
+.body1 .body2 .body2_img ul li .body2_year a {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 15px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.body1 .body2 .body2_img ul li .body2_year .body2_year_09 {
+	color: #808080;
+}
+
+.body1 .body2 .body2_img ul li .body2_year .body2_news {
+	color: #ffc000;
+}
+
+/*最新  新闻  公告  活动*/
+.body1 .body2 .taskbar ul {
+	width: 1280px;
+	height: 36px;
+	margin-top: 38px;
+	padding-left: 0;
+}
+
+.body1 .body2 .taskbar ul li {
+	float: left;
+	background-color: rgba(57, 59, 64, 0.18);
+	color: #f4d8a8;
+	min-width: 155px;
+	height: 36px;
+	/* 直角变圆角↓ */
+	border-radius: 4px;
+	/* 文字居中↓ */
+	text-align: center;
+	margin-right: 20px;
+	line-height: 36px;
+}
+
+.body1 .body2 .taskbar ul li a {
+	color: black;
+}
+
+.body1 .body2 .taskbar ul li:hover {
+	background: #393b40;
+	transition: 0.6s;
+	cursor: pointer;
+}
+
+.body1 .body2 .taskbar ul li:hover a {
+	color: inherit;
+}
+
+/*内容简介*/
+.body1 .body2 .body3_newest ul {
+	position: relative;
+	margin-top: 38px;
+	list-style-type: none;
+	height: auto;
+	padding-left: 0;
+	/* 最顶层↓ */
+	z-index: 99;
+}
+
+/* 隐藏 */
+.body1 .body2 .body3_newest .item {
+	display: none;
+}
+
+.body1 .body2 .taskbar .current {
+	background: #393b40;
+}
+
+.body1 .body2 .taskbar .current a {
+	color: inherit;
+}
+
+.body1 .body2 .body3_newest ul li {
+	position: relative;
+	background-color: #fafafa;
+	padding: 15px 20px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	width: 1240px;
+	border-radius: 4px;
+}
+
+.body1 .body2 .body3_newest ul li a {
+	display: flex;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+
+}
+
+.body1 .body2 .body3_newest ul li a img {
+	width: 265px;
+	height: 140px;
+	margin-right: 20px;
+}
+
+.body1 .body2 .body3_newest ul li a .body3_newest_1 h3 {
+	font-size: 24px;
+	font-weight: 400;
+	color: #000000;
+	margin: 0;
+}
+
+.body1 .body2 .body3_newest ul li .body3_newest_2 {
+	position: absolute;
+	z-index: 1;
+	display: flex;
+	right: 0;
+	padding: 0 20px;
+	/* width: 300px; */
+	bottom: 16px;
+	justify-content: flex-end;
+}
+
+.body1 .body2 .body3_newest ul li .body3_newest_2 .newest_nf {
+	color: #999;
+}
+
+.body1 .body2 .body3_newest ul li .body3_newest_2 a {
+	margin-left: 56px;
+	color: #ffc000;
+}
+
+.body1 .body2 .body3_newest .newest_yf::before {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	border-radius: 4px;
+	opacity: 0;
+	top: -3px;
+	bottom: -3px;
+	left: -3px;
+	right: -3px;
+	display: block;
+	transition: opacity 0.3s linear;
+	border: 3px solid rgba(57, 59, 64, 0.15);
+}
+
+.body1 .body2 .body3_newest ul li:hover {
+	background-color: #ffffff;
+}
+
+.body1 .body2 .body3_newest ul li:hover::before {
+	opacity: 1;
+}
+
+/* 加载更多 */
+.body1 .body2 .body3_newest ul .load {
+	padding: 0;
+	margin: 40px 0 0 0;
+	width: 1280px;
+	height: 40px;
+	background-color: #393b40;
+	font-size: 18px;
+	color: #fff;
+	opacity: 0.9;
+	line-height: 40px;
+	text-align: center;
+}
+
+.body1 .body2 .body3_newest ul .load:hover {
+	background-color: #393b40;
+	opacity: 0.7;
+}
+
+/* 回到顶部 */
+.hui a {
+	position: fixed;
+	right: 54px;
+	width: 60px;
+	height: 60px;
+	border-radius: 4px;
+	background: #fff url(../img/download.png) no-repeat center/22px 24px;
+	z-index: 9999;
+	bottom: 108px;
+}
+
+/* 底部 */
+
+/* city模块 end */
+/* 内容模块 end*/
+/* 尾部模块 start*/
+.footer {
+	position: relative;
+	top: 250px;
+	z-index: 99;
+	width: 100%;
+	min-width: 1280px;
+	min-height: 360px;
+	padding-bottom: 35px;
+	background-color: #111;
+	margin: 0 auto;
+}
+
+/* 社交栏模块 start*/
+/* 去除点，将qq那一排居中 */
+.footer_socialbar {
+	display: flex;
+	z-index: 2;
+	list-style-type: none;
+	width: 100%;
+	height: 52px;
+	line-height: 52px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+/* 最上面的一排图显示 */
+.footer_socialitem {
+	position: relative;
+	float: left;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	margin-right: 34px;
+	opacity: 0.4;
+	cursor: pointer;
+	background-size: cover;
+}
+
+/* 控制上层图片居中 */
+.footer_socialitem:last-child {
+	margin-right: 0;
+}
+
+/* 上层图片，鼠标悬置变白 */
+.footer_socialitem:hover {
+	opacity: 1;
+}
+
+/* 上层图片，代码位置 */
+.footer_socialitem--weibo {
+	background-image: url(../images/weibo.png);
+}
+
+.footer_socialitem--wechat {
+	background-image: url(../images/wechat.png);
+}
+
+.footer_socialitem--qq {
+	background-image: url(../images/qq.png);
+}
+
+.footer_socialitem--share {
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/share.png);
+	background-size: cover;
+}
+
+/* 分享至，那部分的图片排放，隐藏盒子 */
+
+.share_wrap {
+	display: none;
+	position: absolute;
+	right: -6px;
+	bottom: 0;
+	width: 304px;
+	height: 120px;
+	border-radius: 6px;
+	background: #3d3d3d;
+	text-align: center;
+	transform: translateY(142px);
+	transform-origin: top;
+}
+
+/* 点击弹出隐藏盒子内容 */
+.footer_socialitem:hover .share_wrap {
+	display: block;
+}
+
+/* 分享至，字体颜色大小 */
+.share_wrap p {
+	margin-bottom: 6px;
+	height: 46px;
+	line-height: 2.55;
+	font-size: 18px;
+	color: #ccc;
+}
+
+/* 三角 */
+.share_wrap::after {
+	content: '';
+	position: absolute;
+	right: 12px;
+	top: -11px;
+	width: 0;
+	height: 0;
+	border-bottom: 12px solid #3d3d3d;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+}
+
+.share_wrap ul li {
+	display: inline-block;
+	margin-right: 20px;
+	width: 44px;
+	height: 44px;
+	background: transparent url(../images/share_content.png) no-repeat 0 0;
+	opacity: 0.9;
+}
+
+.share_wrap ul li:last-child {
+	margin-right: 0;
+}
+
+.share_wrap ul .share_qzone {
+	background-position: -74px -74px;
+}
+
+.share_wrap ul .share_qq {
+	background-position: -74px -10px;
+}
+
+.share_wrap ul .share_weibo {
+	background-position: -138px -138px;
+}
+
+.share_wrap ul .share_bbs {
+	background-position: -10px -138px;
+}
+
+/* 社交栏模块 end*/
+/* 灰色背景 */
+.mihoyo-cn-footer {
+	padding: 30px 0;
+	background: #000;
+	color: #999;
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+
+/* 两张图到左侧 */
+.mihoyo-cn-footer .footer-content {
+	display: flex;
+	width: 1280px;
+	margin: 0 auto;
+}
+
+/* 调整两行图的具体位置 */
+.mihoyo-cn-footer .footer-logo {
+	flex-direction: column;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	min-height: 94px;
+	min-width: 300px;
+}
+
+
+.mihoyo-cn-footer .footer-logo span {
+	width: 1px;
+	height: 28px;
+	background: #666;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.mihoyo-cn-footer .footer-logo img:first-child {
+	height: 42px;
+}
+
+.mihoyo-cn-footer .footer-logo img.game-logo {
+	width: 110px;
+	height: auto;
+}
+
+.mihoyo-cn-footer .footer-info {
+	color: #aaa;
+	margin-left: 60px;
+	line-height: 24px;
+}
+
+/* 尾部文字模块 start*/
+.mihoyo-cn-footer .footer-link {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.mihoyo-cn-footer .footer-info .footer-protocol {
+	color: #fff;
+	margin-bottom: 28px;
+}
+
+.mihoyo-cn-footer .footer-link a:first-child {
+	margin-left: 0;
+}
+
+.mihoyo-cn-footer .footer-info a.protocol {
+	color: #fff;
+}
+
+.mihoyo-cn-footer .footer-link a {
+	margin: 0 8px 0 5px;
+}
+
+.mihoyo-cn-footer p {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.mihoyo-cn-footer .footer-info .footer-advice p {
+	padding: 0;
+}
+
+.mihoyo-cn-footer .footer-info .inline-info {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.mihoyo-cn-footer .footer-info .inline-info {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.mihoyo-cn-footer .footer-info .split-line {
+	margin: 0 10px;
+}
+
+.footer a {
+	color: #999;
+}
+
+.footer a:hover {
+	color: #fff;
+}
+
+/* 尾部文字模块 end*/
+/* 尾部图标模块 start */
+/* 底部图片链接摆放 */
+.mihoyo-cn-footer .footer-icon {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 10px 0;
+	flex-wrap: wrap;
+	width: 800px;
+}
+
+.mihoyo-cn-footer .footer-icon a {
+	display: block;
+	width: 116px;
+	height: 46px;
+	margin-right: 15px;
+	background-size: 116px 46px;
+	margin-bottom: 10px;
+}
+
+/* 尾部图标模块 end */
+/* 尾部模块 end*/
